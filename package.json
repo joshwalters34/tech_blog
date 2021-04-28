@@ -12,11 +12,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
     "dotenv": "^8.2.0",
+    "eslint": "^7.25.0",
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
-  }
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshwalters34/tech_blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joshwalters34/tech_blog/issues"
+  },
+  "homepage": "https://github.com/joshwalters34/tech_blog#readme"
 }

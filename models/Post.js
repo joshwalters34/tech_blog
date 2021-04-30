@@ -16,14 +16,22 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    comment: {
+    comment_field: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    commentDate: {
-      type: DataTypes.DATETIME,
+    comment_date: {
+      type: DataTypes.DATE,
       defaultValue: Sequelize.NOW
     },
+    // createdAt: {
+    //   type: DataTypes.DATE,
+    //   defaultValue: Sequelize.NOW
+    // },
+    // updatedAt: {
+    //   type: DataTypes.DATE,
+    //   defaultValue: Sequelize.NOW
+    // },
   },
   {
     

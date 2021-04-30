@@ -6,7 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Registry</title>
   <link rel="stylesheet" href="/css/jass.css">
-</head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ 
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="./dashboard">Dashboard</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./login">Login</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./signup">SignUp</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="./">Logout</a>
+      </li>
+      </ul>
+  </div>
+</nav>
+  </header>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
@@ -32,6 +55,7 @@
   <!-- Only include the logout script if the user is logged in -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   {{/if}}
 </body>
 

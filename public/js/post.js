@@ -23,6 +23,6 @@ const postFormHandler = async (event) => {
 };
 
 
-document.querySelector('.login-form').addEventListener('save', postFormHandler);
+document.querySelector('.post-form').addEventListener('submit', postFormHandler);
 
 // document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);

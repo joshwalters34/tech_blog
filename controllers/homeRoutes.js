@@ -39,6 +39,10 @@ router.get('/signup', async (req, res) => {
    res.render('signup');
 });
 
+router.get('/post', async (req, res) => {
+  res.render('post');
+});
+
 router.get('/dashboard', async (req, res) => {
   if (!req.session.logged_in) {
     res.redirect('/login');

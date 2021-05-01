@@ -24,14 +24,6 @@ Post.init(
       type: DataTypes.DATE,
       defaultValue: Sequelize.NOW
     },
-    // createdAt: {
-    //   type: DataTypes.DATE,
-    //   defaultValue: Sequelize.NOW
-    // },
-    // updatedAt: {
-    //   type: DataTypes.DATE,
-    //   defaultValue: Sequelize.NOW
-    // },
   },
   {
     

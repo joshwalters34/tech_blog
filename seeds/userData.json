@@ -1,24 +1,22 @@
 [
   {
     "username": "joshwalters34",
-    "password": "password12345"
+    "password": "pw12345"
   },
   {
     "username": "bobby",
-    "password": "password12345"
+    "password": "pw12345"
   },
   {
-    "email": "janedoe@aol.com",
-    "password": "password12345"
+    "username": "jane123",
+    "password": "pw12345"
   },
   {
-    "name": "LeBron",
-    "email": "chosenone@msn.com",
-    "password": "password12345"
+    "username": "lebron23",
+    "password": "pw12345"
   },
   {
-    "name": "Steph",
-    "email": "chefcurry@yahoo.com",
-    "password": "password12345"
+    "email": "stephcookin",
+    "password": "pw12345"
   }
 ]

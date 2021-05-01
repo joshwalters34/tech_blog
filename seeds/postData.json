@@ -1,17 +1,18 @@
 [
   {
     "title": "Sequelize",
-    "comment_field": "Sequelize is a Node.js ORM used with mysql. It proved good support for db synchronization and is easy to test."
+    "comment_field": "Sequelize is a Node.js ORM used with mysql. It proved good support for db synchronization and is easy to test.",
+    "user_id": 1
     
   },
   {
     "title": "dotenv",
-    "comment_field": "dotenv is a npm package that allows you to keep your db password safe.  Just create a .env file for your login credentials and reference those values in your server.js file!"
-    
+    "comment_field": "dotenv is a npm package that allows you to keep your db password safe.  Just create a .env file for your login credentials and reference those values in your server.js file!",
+    "user_id": 3
   },
   {
     "title": "eslint",
-    "comment_field": "eslint is a npm package that helps keep your code clean and fix any errors you may have."
-    
+    "comment_field": "eslint is a npm package that helps keep your code clean and fix any errors you may have.",
+    "user_id": 2
   }
 ]

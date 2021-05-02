@@ -40,7 +40,9 @@ router.get('/signup', async (req, res) => {
 });
 
 router.get('/post', async (req, res) => {
-  res.render('post');
+  res.render('post', {
+    logged_in: req.session.logged_in,
+  });
 });
 
 router.get('/dashboard', async (req, res) => {

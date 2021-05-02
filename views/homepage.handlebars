@@ -1,27 +1,26 @@
 
 {{#each posts as |post| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-
-    <h2>{{post.title}}</h2>
-    <p>{{post.comment_field}}</p>
-    <p>{{post.updated_at}}</p>
-    {{!-- <h2>
-            <a href="/post/{{post.id}}"></a>
-    </h2> --}}
-
-    {{!-- <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+<div class="card " style="width: 75%;">
+  <div class="card-body">
+    <h5 class="card-title text-white bg-success pl-2">{{post.title}}</h5>
+    <p class="card-text bg-light text-black pl-2">{{post.comment_field}}</p>
+    <div class="card-footer text-muted">
+     Created {{format_date post.comment_date}} by {{post.user_id}}
   </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p> --}}
   </div>
 </div>
+</div>
+</div>
+{{#if logged_in}}
+<div data-post="{{post.id}}" class="form-floating mt-1 " style="margin-bottom: 50px; width: 75%">
+    <textarea class="form-control" placeholder="Leave a comment" id="floatingTextarea">
+        </textarea>
+    <label for="floatingTextarea"></label>
+    <button class="mt-1 form-comment">Comment</button>
+</div>
+{{else}}
+<div class="form-floating mt-1" style="margin-bottom: 50px;">
+    <a href="/login"><button>Login for comments</button></a>
+</div>
+{{/if}}
 {{/each}}
